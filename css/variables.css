@@ -1,1 +1,37 @@
+/* ==========================================
+   HARWELL SERVICES DESIGN SYSTEM
+========================================== */
 
+:root{
+
+    /* Colors */
+    --primary:#D4AF37;
+    --primary-light:#F3D16A;
+
+    --dark:#0D0D0D;
+    --dark-2:#171717;
+    --dark-3:#202020;
+
+    --white:#FFFFFF;
+    --light:#F7F7F7;
+    --gray:#B0B0B0;
+
+    --success:#3CB371;
+
+    /* Fonts */
+    --heading:'Bebas Neue', sans-serif;
+    --body:'Poppins', sans-serif;
+
+    /* Sizes */
+    --container:1280px;
+    --radius:14px;
+
+    /* Shadows */
+    --shadow-sm:0 8px 20px rgba(0,0,0,.15);
+    --shadow-lg:0 20px 60px rgba(0,0,0,.35);
+
+    /* Animation */
+
+    --transition:.35s ease;
+
+}
