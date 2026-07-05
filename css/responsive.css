@@ -185,3 +185,11 @@
     }
 
 }
+
+@media(max-width:480px){
+
+    .ba-slider{
+        height:320px;
+    }
+
+}
