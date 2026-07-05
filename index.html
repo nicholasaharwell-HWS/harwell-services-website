@@ -250,13 +250,29 @@ Serving Duncan and surrounding communities.
       </div>
     </div>
 
-    <form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="tel" name="phone" placeholder="Phone Number" required>
-      <input type="email" name="email" placeholder="Email Address">
-      <textarea name="message" placeholder="Tell us about the job" required></textarea>
-      <button class="btn btn-primary" type="submit">Request Estimate</button>
-    </form>
+    <form class="quote-form" action="https://formspree.io/f/xvzjlrkq" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <select name="service" required>
+    <option value="">What service do you need?</option>
+    <option value="House Washing">House Washing</option>
+    <option value="Concrete Cleaning">Concrete Cleaning</option>
+    <option value="Deck & Fence Cleaning">Deck & Fence Cleaning</option>
+    <option value="Commercial Cleaning">Commercial Cleaning</option>
+    <option value="Business Cleaning">Business Cleaning</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <textarea name="message" placeholder="Tell us about the job" required></textarea>
+
+  <input type="hidden" name="_subject" value="New Harwell Services Quote Request">
+
+  <button class="btn btn-primary" type="submit">Request Estimate</button>
+</form>
   </div>
 </section>
 
