@@ -1,1 +1,120 @@
+/* ==========================================
+   HARWELL SERVICES
+   RESPONSIVE STYLES
+========================================== */
 
+@media (max-width: 900px){
+
+    .navbar{
+        position:absolute;
+        padding:18px 0;
+    }
+
+    .nav-container{
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .logo-circle{
+        width:48px;
+        height:48px;
+        font-size:1.5rem;
+    }
+
+    .logo-text h3{
+        font-size:1.3rem;
+    }
+
+    .logo-text span{
+        font-size:.9rem;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .navbar .btn{
+        display:none;
+    }
+
+    .hero{
+        min-height:100vh;
+        padding-top:150px;
+        padding-bottom:70px;
+        align-items:flex-start;
+    }
+
+    .hero-content{
+        max-width:100%;
+    }
+
+    .hero-location{
+        font-size:.95rem;
+        margin-bottom:18px;
+    }
+
+    .hero h1{
+        font-size:clamp(3.8rem, 18vw, 6rem);
+        line-height:.92;
+        margin-bottom:25px;
+    }
+
+    .hero-description{
+        font-size:1rem;
+        line-height:1.7;
+        margin-bottom:32px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:14px;
+        width:100%;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+        padding:16px 20px;
+    }
+
+    .trust{
+        padding:60px 0;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .trust-card{
+        padding:30px 22px;
+    }
+
+    .trust-card h2{
+        font-size:2.2rem;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .container{
+        width:88%;
+    }
+
+    .hero{
+        padding-top:135px;
+    }
+
+    .hero h1{
+        font-size:4.1rem;
+    }
+
+    .hero-description{
+        font-size:.95rem;
+    }
+
+    .btn{
+        font-size:.95rem;
+    }
+
+}
