@@ -1,4 +1,3 @@
-
 /* ==========================================
    HARWELL SERVICES
    MAIN STYLESHEET
@@ -6,9 +5,7 @@
 
 /* ---------- RESET ---------- */
 
-*,
-*::before,
-*::after{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -28,109 +25,145 @@ body{
 
     overflow-x:hidden;
 
-    line-height:1.6;
-
 }
 
-/* ---------- SCROLLBAR ---------- */
-
-::-webkit-scrollbar{
-
-    width:12px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#111;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:var(--primary);
-
-    border-radius:50px;
-
-}
-
-/* ---------- LINKS ---------- */
-
-a{
-
-    color:inherit;
-
-    text-decoration:none;
-
-}
-
-/* ---------- IMAGES ---------- */
-
-img{
-
-    max-width:100%;
-
-    display:block;
-
-}
-
-/* ---------- CONTAINER ---------- */
+/* ---------- GENERAL ---------- */
 
 .container{
 
-    width:min(92%, var(--container));
+    width:min(90%,1280px);
 
     margin:auto;
 
 }
 
-/* ---------- SECTIONS ---------- */
+a{
 
-section{
+    text-decoration:none;
 
-    padding:120px 0;
-
-    position:relative;
+    color:inherit;
 
 }
 
-/* ---------- HEADINGS ---------- */
+ul{
 
-h1,h2,h3,h4{
-
-    font-family:var(--heading);
-
-    letter-spacing:2px;
-
-    line-height:1;
+    list-style:none;
 
 }
 
-h1{
+img{
 
-    font-size:clamp(4rem,8vw,7rem);
-
-}
-
-h2{
-
-    font-size:clamp(3rem,6vw,5rem);
+    max-width:100%;
 
 }
 
-h3{
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    padding:25px 0;
+
+    transition:.35s;
+
+}
+
+.nav-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/* ---------- LOGO ---------- */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo-circle{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     font-size:2rem;
 
+    font-family:var(--heading);
+
 }
 
-/* ---------- PARAGRAPHS ---------- */
+.logo-text h3{
 
-p{
+    font-family:var(--body);
 
-    color:var(--gray);
+    font-size:1.8rem;
 
-    font-size:1.05rem;
+    font-weight:700;
+
+}
+
+.logo-text span{
+
+    color:var(--primary);
+
+    font-size:1rem;
+
+}
+
+/* ---------- NAV LINKS ---------- */
+
+.nav-links{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+.nav-links a{
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--primary);
 
 }
 
@@ -138,21 +171,19 @@ p{
 
 .btn{
 
-    display:inline-flex;
+    padding:16px 34px;
 
-    align-items:center;
-
-    justify-content:center;
-
-    padding:18px 38px;
-
-    border-radius:100px;
-
-    transition:var(--transition);
+    border-radius:50px;
 
     font-weight:600;
 
-    cursor:pointer;
+    transition:.35s;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
 
 }
 
@@ -160,15 +191,13 @@ p{
 
     background:var(--primary);
 
-    color:black;
+    color:#111;
 
 }
 
 .btn-primary:hover{
 
-    transform:translateY(-5px);
-
-    box-shadow:var(--shadow-lg);
+    transform:translateY(-4px);
 
 }
 
@@ -184,30 +213,191 @@ p{
 
     background:var(--primary);
 
-    color:black;
+    color:#111;
 
 }
 
-/* ---------- UTILITIES ---------- */
+/* ---------- HERO ---------- */
 
-.text-center{
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(rgba(0,0,0,.65),
+        rgba(0,0,0,.65)),
+        url("../images/hero/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.25);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:5;
+
+    max-width:850px;
+
+}
+
+.hero-location{
+
+    color:var(--primary);
+
+    font-size:1.2rem;
+
+    margin-bottom:25px;
+
+    letter-spacing:2px;
+
+}
+
+.hero h1{
+
+    font-family:var(--heading);
+
+    font-size:7rem;
+
+    line-height:.9;
+
+    margin-bottom:35px;
+
+    text-transform:uppercase;
+
+}
+
+.hero-description{
+
+    max-width:650px;
+
+    font-size:1.3rem;
+
+    color:#c9c9c9;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+/* ---------- TRUST ---------- */
+
+.trust{
+
+    background:#161616;
+
+    padding:100px 0;
+
+}
+
+.trust-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.trust-card{
+
+    background:#202020;
+
+    padding:45px 35px;
+
+    border-radius:18px;
 
     text-align:center;
 
+    transition:.35s;
+
+    border:1px solid rgba(255,255,255,.05);
+
 }
 
-.mt-1{margin-top:20px;}
-.mt-2{margin-top:40px;}
-.mt-3{margin-top:60px;}
+.trust-card:hover{
 
-.mb-1{margin-bottom:20px;}
-.mb-2{margin-bottom:40px;}
-.mb-3{margin-bottom:60px;}
+    transform:translateY(-10px);
 
-/* ---------- LOGO COLOR ---------- */
+    border-color:var(--primary);
 
-.gold{
+}
+
+.trust-card h2{
+
+    font-size:3rem;
 
     color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.trust-card h3{
+
+    font-family:var(--body);
+
+    margin-bottom:15px;
+
+    font-size:1.3rem;
+
+}
+
+.trust-card p{
+
+    color:#bdbdbd;
+
+    line-height:1.7;
+
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
 
 }
