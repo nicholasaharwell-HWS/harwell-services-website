@@ -130,17 +130,14 @@
     }
 }
 
-@media (max-width:900px){
+@media(max-width:900px){
     .quote-grid{
         grid-template-columns:1fr;
-        gap:35px;
-    }
-
-    .quote-section{
-        padding:70px 0;
     }
 
     .quote-form{
         padding:28px;
     }
 }
+
+
