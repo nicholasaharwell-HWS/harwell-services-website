@@ -535,3 +535,47 @@ img{
     width:100%;
     border:none;
 }
+
+/* ---------- BEFORE & AFTER ---------- */
+
+.before-after{
+    background:#f5f5f5;
+    color:#111;
+    padding:110px 0;
+}
+
+.before-after .section-header p{
+    color:#555;
+}
+
+.before-after-card{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.ba-image{
+    min-height:340px;
+    border-radius:24px;
+    display:flex;
+    align-items:flex-end;
+    padding:25px;
+    background:#191919;
+    box-shadow:0 25px 70px rgba(0,0,0,.18);
+}
+
+.ba-before{
+    background:linear-gradient(135deg,#2a2a2a,#111);
+}
+
+.ba-after{
+    background:linear-gradient(135deg,#d4af37,#f3d16a);
+}
+
+.ba-image span{
+    background:#111;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:999px;
+    font-weight:700;
+}
