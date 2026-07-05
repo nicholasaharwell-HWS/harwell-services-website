@@ -476,3 +476,13 @@ img{
     line-height:1.7;
 }
 
+
+.quote-form select{
+    padding:16px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.15);
+    background:#111;
+    color:white;
+    font-family:var(--body);
+    font-size:1rem;
+}
