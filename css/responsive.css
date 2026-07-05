@@ -171,3 +171,17 @@
         grid-template-columns:1fr;
     }
 }
+
+@media(max-width:900px){
+
+    .ba-slider{
+        height:420px;
+    }
+
+    .ba-before-wrap img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+}
