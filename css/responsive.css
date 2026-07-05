@@ -149,3 +149,25 @@
         min-height:240px;
     }
 }
+
+@media(max-width:900px){
+    .hero-content{
+        padding-top:130px;
+    }
+
+    .hero h1{
+        font-size:4.4rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
+    }
+}
