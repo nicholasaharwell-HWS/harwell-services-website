@@ -140,4 +140,12 @@
     }
 }
 
+@media(max-width:900px){
+    .before-after-card{
+        grid-template-columns:1fr;
+    }
 
+    .ba-image{
+        min-height:240px;
+    }
+}
