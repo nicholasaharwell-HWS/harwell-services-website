@@ -468,6 +468,13 @@ img{
     transition:.35s ease;
 }
 
+.service-icon img{
+    width:42px;
+    height:42px;
+    display:block;
+    object-fit:contain;
+}
+
 .service-card:hover .service-icon{
     transform:scale(1.08) rotate(-3deg);
 }
