@@ -440,7 +440,7 @@ img{
 .service-card{
     background:#191919;
     border:1px solid rgba(212,175,55,.25);
-    border-radius:50%;
+    border-radius:24px;
     padding:38px 28px;
     min-height:280px;
     transition:.35s;
@@ -455,7 +455,7 @@ img{
 .service-icon{
     width:82px;
     height:82px;
-    border-radius:22px;
+    border-radius:50%;
     background:linear-gradient(135deg,var(--primary),var(--primary-light));
     color:#111;
     display:flex;
