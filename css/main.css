@@ -497,7 +497,10 @@ img {
 
 .ba-before-wrap img {
     width: 1000px;
+    height: 100%;
     max-width: none;
+    object-fit: contain;
+    object-position: center;
 }
 
 .ba-range {
